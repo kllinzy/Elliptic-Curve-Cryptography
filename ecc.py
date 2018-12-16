@@ -68,7 +68,7 @@ def ECdecode(P):
 def encrypt(s, key):
     curve = key.curve
     p = curve.p
-    return encrypt_long(encode_string(s,curve,int(math.log(p/1000-1,256))),key)
+    return encrypt_long(encode_string(s,curve,int(math.log(p//(1000-1),256))),key)
 
 def decrypt(arr,key,k):
     return decode_string(decrypt_long(arr,key,k))
