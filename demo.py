@@ -5,7 +5,7 @@ print("Elliptic Curve Cryptosystem: written by Kyle Linzy")
 print("*Note* press ctrl-c to exit the loop and the demo")
 print()
 
-numZeros = int(input("enter a number of zeros for the prime number (i.e. 3 => 1000).\nMinimum is 6 \nNumber of Zeros = "))
+numZeros = int(input("enter a number of digits for the prime number (i.e. 3 => 100 < prime < 1000).\nMinimum is 6 \nNumber of Zeros = "))
 
 if numZeros < 6:
     numZeros = 6
