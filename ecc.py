@@ -106,24 +106,3 @@ def random_prime(low,high):
         if(miller_rabin(result, 45)):
             break
     return result
-
-#print()
-#print("Elliptic Curve Cryptosystem: written by Kyle Linzy")
-#print("*Note* press ctrl-c to exit the loop and the demo")
-#print()
-#low = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-#high = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-1
-
-#p = random_prime(low, high)
-#k = randint(1,p-1)
-#public_key = Public_Key.make_public_key(p,k)
-#print(public_key)
-#print()
-#while (True):
-#    s = input("Enter a message to be encrypted\n")
-#    print()
-#    encrypted = encrypt(s,public_key)
-#    print("Encrypted array of points on the curve:\n", encrypted)
-#    print()
-#    print("Decrypted string:\n", decrypt(encrypted, public_key,k))
-#    print()
